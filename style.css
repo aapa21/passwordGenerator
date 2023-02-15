@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #2435;
+    padding: 10px;
+}
+
+.container{
+    border: 3px solid #435;
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    background-color:steelblue;
+    border-radius: 20px;
+}
+
+.container h2{
+    margin: 10px 0 20px;
+    text-align: center;
+    background-color: #435;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.generated-password{
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.generated-password span{
+    word-wrap: break-word;
+    max-width: calc(100% - 40px)
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+    border: none;
+}
+
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.setting:nth-child(5){
+    margin-bottom: 19px;
+}
+
+.btn-generate{
+    display: block;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-generate:hover{
+    background-color: #646;
+    color: #fff;
+}
+
+input{
+    cursor: pointer;
+}
+
+.recommendations a{
+    text-decoration: none;
+    color: #012d3d;
+    font-size: 17px;
+    margin-left: 16px;
+}
+
+@media screen and (max-width: 400px) {
+    .generated-password{
+        font-size: 14px;
+    }
+}
